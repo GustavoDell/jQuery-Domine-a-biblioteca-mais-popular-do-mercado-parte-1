@@ -5,7 +5,7 @@ tamanhoFrase.text(numPalavras)
 
 var campo = $(".campo-digitacao")
 
-campo.on("input", function(){//.on() fuca sempre ouvindo a função possibilitanto chamar mais de uam vez
+campo.on("input", function(){//.on() fica o tempo todo escutando o evento
 
     var conteudo = campo.val()//Função .val() da acesso ao valor do input do usuários
 
