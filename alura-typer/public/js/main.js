@@ -22,9 +22,9 @@ campo.one("focus",function(){ //focus pega qualquer interação com o campo //.o
         tempoRestante--;
         $("#tempo-digitacao").text(tempoRestante);
         if(tempoRestante < 1){
-            campo.attr("disabled", true)//.attr() serve para pegar os atributos do html ou então altera-lós
-            clearInterval(cronometroID);//clearInterval da stop no setInterval()
+            campo.attr("disabled", true);//.attr() serve para pegar os atributos do html ou então altera-lós
+            clearInterval(cronometroID);//clearInterval da stop no setInterval() (todo setInterval retorna seu ID, então possivel pegalo por meio de uma variavel)
         }
 
-    },1000);//Função pura do javascript que executa uma ação de tanto em tanto tempo 
+    },1000);//Função pura do javascript, que executa uma ação de tanto em tanto tempo 
 });
